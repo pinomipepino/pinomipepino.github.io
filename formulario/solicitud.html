@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Javier Gonzalez Jimenez">
+    <meta name="description" content="Formulario de solicitud de acceso">
+    <meta name="keywords" content="formulario, solicitud, acceso">
+    <title>Formulario de Solicitud</title>
+</head>
+<body>
 
+    <header>
+        <h1>Solicitud de Acceso</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Volver al menú principal</a></li>
+            <li><a href="index.html">Volver al índice de formularios</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nom">Nombre:</label>
+                <input type="text" id="nom" name="nombre"><br><br>
+
+                <label for="ape">Apellidos:</label>
+                <input type="text" id="ape" name="apellidos"><br><br>
+
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]{1}" title="8 números y una letra"><br><br>
+
+                <label for="loc">Localidad de Nacimiento:</label>
+                <input type="text" id="loc" name="localidad"><br><br>
+
+                <label for="prov">Provincia:</label>
+                <select id="prov" name="provincia">
+                    <option value="Huelva">Huelva</option>
+                    <option value="Sevilla">Sevilla</option>
+                </select><br><br>
+
+                <label for="fecha_nac">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nac" name="fecha_nacimiento"><br><br>
+
+                <label for="dir">Dirección:</label>
+                <input type="text" id="dir" name="direccion"><br><br>
+
+                <label for="cp">Código Postal:</label>
+                <input type="text" id="cp" name="cp"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Forma de Acceso</legend>
+                <input type="radio" id="directo" name="acceso" value="directo">
+                <label for="directo">Directo</label><br>
+                <input type="radio" id="prueba" name="acceso" value="prueba_libre">
+                <label for="prueba">Prueba Libre</label><br><br>
+
+                <!-- Sub-opciones para Directo -->
+                <input type="radio" id="bach" name="acceso_directo" value="bachillerato">
+                <label for="bach">Bachillerato Log Mod</label>
+                <input type="text" name="nota_bachillerato"><br>
+                
+                <input type="radio" id="exp" name="acceso_directo" value="experimental">
+                <label for="exp">Experimental</label><br>
+                
+                <input type="radio" id="cou" name="acceso_directo" value="cou">
+                <label for="cou">COU Opción</label>
+                <input type="text" name="nota_cou"><br>
+                
+                <input type="radio" id="fp2" name="acceso_directo" value="fp2">
+                <label for="fp2">FP2</label><br>
+                
+                <input type="radio" id="otros" name="acceso_directo" value="otros">
+                <label for="otros">Otros (especifique)</label>
+                <input type="text" name="otros_especifique"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Documentos Adjuntados</legend>
+                <input type="checkbox" id="foto" name="documentos" value="fotocopia">
+                <label for="foto">Fotocopia DNI</label><br>
+                
+                <input type="checkbox" id="cert" name="documentos" value="certificado">
+                <label for="cert">Certificado Académico</label><br>
+                
+                <input type="checkbox" id="otros_doc" name="documentos" value="otros">
+                <label for="otros_doc">Otros documentos (especifique)</label>
+                <input type="text" name="otros_doc_texto">
+            </fieldset>
+
+            <br>
+            <button type="submit">Enviar Solicitud</button>
+            <button type="reset">Limpiar datos</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Javier Gonzalez Jimenez</p>
+    </footer>
+
+</body>
+</html>
