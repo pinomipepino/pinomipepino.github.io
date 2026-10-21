@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Javier Gonzalez Jimenez">
+    <meta name="description" content="Formulario para dejar una reseña de un plato">
+    <meta name="keywords" content="reseña, plato, restaurante, Casa Frasco">
+    <title>Reseña de un plato - Casa Frasco</title>
+</head>
+<body>
 
+    <header>
+        <h1>Deja tu reseña</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Volver al menú principal</a></li>
+            <li><a href="index.html">Volver al restaurante</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Opinión sobre nuestros platos</legend>
+
+                <label for="plato">Selecciona el plato:</label><br>
+                <select id="plato" name="plato" required>
+                    <option value="">-- Elige un plato --</option>
+                    <option value="plato1">Plato 1 Paella</option>
+                    <option value="plato2">Plato 2 Tortilla de patatas</option>
+                    <option value="plato3">Plato 3 Torreznos de soria</option>
+                </select><br><br>
+
+                <label for="nombre_resena">Tu nombre:</label><br>
+                <input type="text" id="nombre_resena" name="nombre_resena" required><br><br>
+
+                <label for="texto_resena">Tu reseña:</label><br>
+                <textarea id="texto_resena" name="texto_resena" rows="5" cols="40" required></textarea><br><br>
+
+                <button type="submit">Enviar Reseña</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Javier Gonzalez Jimenez - Casa Frasco</p>
+    </footer>
+
+</body>
+</html>
