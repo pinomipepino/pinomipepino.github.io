@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Javeir Gonzalez Jimenez">
+    <meta name="description" content="Cuestionario para unirse al club de informática">
+    <meta name="keywords" content="club, informatica, formulario, cuestionario">
+    <title>Amigos de la informática</title>
+</head>
+<body>
 
+    <header>
+        <h1>Rellena el siguiente cuestionario para formar parte del club de "Amigos de la informática"</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Volver al menú principal</a></li>
+            <li><a href="index.html">Volver al índice de formularios</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                
+                <label for="nom2">Nombre:</label>
+                <input type="text" id="nom2" name="nombre"><br><br>
+                
+                <label for="dom">Domicilio:</label>
+                <input type="text" id="dom" name="domicilio" placeholder="calle, numero y localidad"><br><br>
+                
+                <label for="pais">País de origen:</label>
+                <select id="pais" name="pais">
+                    <option value="España">España</option>
+                    <option value="Mexico">México</option>
+                    <option value="Argentina">Argentina</option>
+                </select><br><br>
+                
+                <label for="fnac2">Fecha de nacimiento:</label>
+                <input type="date" id="fnac2" name="fecha_nacimiento"><br><br>
+                
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo"><br><br>
+                
+                <label for="tel2">Teléfono:</label>
+                <input type="tel" id="tel2" name="telefono"><br><br>
+
+                <label>Estado civil:</label>
+                <input type="radio" id="soltero" name="estado_civil" value="soltero"><label for="soltero">Solter@</label>
+                <input type="radio" id="casado" name="estado_civil" value="casado"><label for="casado">Casad@</label>
+                <input type="radio" id="separado" name="estado_civil" value="separado"><label for="separado">Separa@</label>
+                <input type="radio" id="viudo" name="estado_civil" value="viudo"><label for="viudo">Viud@</label><br><br>
+
+                <label>Sexo:</label>
+                <input type="radio" id="hombre" name="sexo" value="hombre"><label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="sexo" value="mujer"><label for="mujer">Mujer</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Otra información de interés</legend>
+                
+                <label for="dispositivo">Seleccione los componentes electrónicos con los que habitualmente trabaja:</label><br>
+                <select id="dispositivo" name="dispositivo" multiple size="4">
+                    <option value="movil">Móvil</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="ordenador">Ordenador</option>
+                    <option value="ebook">Ebook</option>
+                </select><br><br>
+
+                <label>Seleccione tus actividades favoritas:</label><br>
+                <input type="checkbox" id="deporte" name="actividades" value="deporte"><label for="deporte">Hacer deporte</label>
+                <input type="checkbox" id="amigos" name="actividades" value="amigos"><label for="amigos">Salir con mis amigos</label>
+                <input type="checkbox" id="series" name="actividades" value="series"><label for="series">Ver series, pelis...</label><br>
+                <input type="checkbox" id="rutas" name="actividades" value="rutas"><label for="rutas">Realizar rutas de senderismo</label>
+                <input type="checkbox" id="cine" name="actividades" value="cine"><label for="cine">Ir al cine</label>
+                <input type="checkbox" id="musica" name="actividades" value="musica"><label for="musica">Escuchar música</label><br><br>
+
+                <label for="motivo">Explique brevemente el motivo por el que desea ingresar en nuestro club:</label><br>
+                <textarea id="motivo" name="motivo" rows="4" cols="50"></textarea><br><br>
+
+                <label for="peli">Elige o escribe tu peli favorita:</label>
+                <input type="text" id="peli" name="peli_favorita" list="peliculas">
+                <datalist id="peliculas">
+                    <option value="El Padrino">
+                    <option value="Matrix">
+                    <option value="Interestelar">
+                </datalist>
+            </fieldset>
+
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Javier Gonzalez Jimenez</p>
+    </footer>
+
+</body>
+</html>
