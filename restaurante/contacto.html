@@ -2,10 +2,41 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Javier Gonzalez Jimenez">
-    <meta name="description" content="Formulario de contacto de Casa Frasco">
-    <meta name="keywords" content="contacto, restaurante, Casa Frasco">
+    <meta name="author" content="Tu Nombre">
+    <meta name="description" content="Formulario de contacto">
+    <meta name="keywords" content="contacto, restaurante">
     <title>Contacto - Casa Frasco</title>
+    <style>
+        body {
+            background-color: #f4f1ea;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        h1 {
+            color: #b5c7d3; /* Azul pastel */
+        }
+        fieldset {
+            background-color: #ffffff;
+            border: 2px solid #b5c7d3; /* Borde azul pastel */
+            padding: 15px;
+        }
+        legend {
+            color: #b5c7d3;
+            font-weight: bold;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: #fafafa;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #d1c4e9; /* Lila pastel */
+            padding: 10px 20px;
+            border: 1px solid #b39ddb;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,19 +52,14 @@
         <form action="#" method="post">
             <fieldset>
                 <legend>Formulario de Contacto</legend>
-                
                 <label for="nombre">Nombre completo:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br><br>
-                
+                <input type="text" id="nombre" name="nombre" required><br>
                 <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                
+                <input type="email" id="email" name="email" required><br>
                 <label for="asunto">Asunto:</label><br>
-                <input type="text" id="asunto" name="asunto"><br><br>
-                
+                <input type="text" id="asunto" name="asunto"><br>
                 <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea><br><br>
-                
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br>
                 <button type="submit">Enviar Mensaje</button>
             </fieldset>
         </form>
