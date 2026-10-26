@@ -2,59 +2,76 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Javier Gonzalez Jimenez">
-    <meta name="description" content="Formulario para hacer una reserva en Casa Frasco">
-    <meta name="keywords" content="reserva, restaurante, Casa Frasco">
+    <meta name="author" content="Tu Nombre Completo">
+    <meta name="description" content="Formulario de reserva">
+    <meta name="keywords" content="reserva, restaurante">
     <title>Haz una reserva - Casa Frasco</title>
+    <style>
+        body {
+            background-color: #f4f1ea; /* Fondo crema pastel */
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        h1 {
+            color: #8e7cc3; /* Lila pastel */
+        }
+        fieldset {
+            background-color: #ffffff; /* Fondo blanco */
+            border: 2px solid #d1c4e9; /* Borde lila pastel */
+            padding: 15px;
+        }
+        legend {
+            color: #8e7cc3; /* Lila pastel */
+            font-weight: bold;
+        }
+        input, textarea, select {
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: #fafafa;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #a8e6cf; /* Verde menta pastel */
+            padding: 10px 20px;
+            border: 1px solid #8fd3b8;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-
     <header>
         <h1>Haz una reserva</h1>
     </header>
-
     <nav>
         <ul>
             <li><a href="../index.html">Volver al menú principal</a></li>
             <li><a href="index.html">Volver al restaurante</a></li>
         </ul>
     </nav>
-
     <main>
         <form action="#" method="post">
             <fieldset>
                 <legend>Datos de la reserva</legend>
-
                 <label for="nombre">Su nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="Su nombre" required><br><br>
-
+                <input type="text" id="nombre" name="nombre" required><br>
                 <label for="comensales">Número de clientes:</label><br>
-                <input type="number" id="comensales" name="comensales" min="1" placeholder="Número de clientes" required><br><br>
-
+                <input type="number" id="comensales" name="comensales" min="1" required><br>
                 <label for="email">Su correo electrónico:</label><br>
-                <input type="email" id="email" name="email" placeholder="Su correo electrónico" required><br><br>
-
+                <input type="email" id="email" name="email" required><br>
                 <label for="telefono">Su teléfono:</label><br>
-                <input type="tel" id="telefono" name="telefono" placeholder="Su teléfono" required><br><br>
-
+                <input type="tel" id="telefono" name="telefono" required><br>
                 <label for="fecha">Fecha de la reserva:</label><br>
-                <input type="date" id="fecha" name="fecha" required><br><br>
-
+                <input type="date" id="fecha" name="fecha" required><br>
                 <label for="hora">Hora de la reserva:</label><br>
-                <input type="time" id="hora" name="hora" required><br><br>
-
+                <input type="time" id="hora" name="hora" required><br>
                 <label for="mensaje">Su mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="3" cols="40" placeholder="Su mensaje"></textarea><br><br>
-
+                <textarea id="mensaje" name="mensaje" rows="3"></textarea><br>
                 <button type="submit">SOLICITAR RESERVA</button>
             </fieldset>
         </form>
-        <p>Si desea saber cómo protegemos sus datos, consulte nuestra <a href="#">Política de privacidad</a></p>
     </main>
-
     <footer>
         <p>&copy; 2026 Javier Gonzalez Jimenez - Casa Frasco</p>
     </footer>
-
 </body>
 </html>
