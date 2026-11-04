@@ -5,16 +5,17 @@
         th, td {
             padding: 8px 12px;
             text-align: center;
+            color: rgb(0, 0, 0);
         }
         th {
-            background-color: rgb(214, 0, 0); /* mismo rojo del header */
-            color: rgb(173, 226, 226);        /* mismo color de texto del header */
-            border: 1px solid rgb(135, 197, 138);
+            background-color: rgb(214, 0, 0); 
+            color: rgb(173, 226, 226);        
         }
         caption {
             font-weight: bold;
             margin-bottom: 8px;
         }
         tfoot td {
-            background-color: rgb(86, 255, 137); /* mismo verde del nav */
+            background-color: rgb(86, 255, 137);
             font-weight: bold;
+        }
