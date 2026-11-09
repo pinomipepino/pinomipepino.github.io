@@ -1,21 +1,20 @@
-
 table {
-    border-collapse: collapse; 
-    margin: 0 auto; 
-    width: 100%; 
-    max-width: 800px; 
-    background-color: rgb(255, 255, 255); 
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgb(255, 255, 255);
 }
 
 th, td {
-    padding: 10px 15px; 
+    padding: 10px 15px;
     text-align: center;
-    border: 1px solid rgb(200, 200, 200); 
+    border: 1px solid rgb(200, 200, 200);
 }
 
 th {
-    background-color: rgb(180, 60, 60); 
-    color: rgb(255, 255, 255); 
+    background-color: rgb(180, 60, 60);
+    color: rgb(255, 255, 255);
     font-size: 1.1rem;
 }
 
@@ -29,5 +28,11 @@ tfoot td {
     background-color: rgb(255, 230, 150);
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
